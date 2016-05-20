@@ -1,5 +1,5 @@
 <?php
-
+//<label>姓名</label>
 echo $_POST['k'];
 echo $_POST['n']. "<br>";
 echo $_POST['rdo'] . "<br>";
