@@ -1,4 +1,5 @@
 <?php
+
 echo $_POST['k'];
 echo $_POST['n']. "<br>";
 echo $_POST['rdo'] . "<br>";
