@@ -21,13 +21,15 @@
 
     <div id = "name_left">性別<div id=br>必須</div></div>
     <div id = "name_right">
-    <input type="radio" name="rdo" value="男">男性
-    <input type="radio" name="rdo" value="女">女性
-    <input type="radio" name="rdo" value="不明">不明
+    <input type="radio" name="rdo" value="男姓"  checked id="m">
+    <label for="m">男性</label>
+    <input type="radio" name="rdo" value="女姓" id = "w">
+    <label for="w">女性</label>
+    <input type="radio" name="rdo" value="不明" id="u">
+    <label for="u">不明</label>
+
     </div>
     <div class="clear_box"></div>
-
-
     <div id = "name_left">住所<div id=br>必須</div></div>
     <div id = "name_right">
     <input type="text" name="adress" placeholder = "例）東京都〇〇区〇-〇-〇" value=""　required="required">
@@ -50,11 +52,14 @@
     </div>
     <div class="clear_box"></div>
 
-    <div id = "name_left">どこで知ったか<div id=br>必須</div></div>
+    <div id = "name_left">どこで知ったか<span>(複数可)</span><div id=br>必須</div></div>
     <div id = "name_right">
-    <input type="checkbox" name="cbx" value="雑誌">雑誌
-    <input type="checkbox" name="cbx" value="インターネット">インターネット
-    <input type="checkbox" name="cbx" value="学校">学校
+    <input type="checkbox" name="cbx[0]" id = "c" value="雑誌" checked id = "c">
+    <label for="c">雑誌</label>
+    <input type="checkbox" name="cbx[1]" id = "b" value="インターネット">
+    <label for="c">インターネット</label>
+    <input type="checkbox" name="cbx[2]" id = "x" value="学校">
+    <label for="c">学校</label>
     </div>
     <div class="clear_box"></div>
 
