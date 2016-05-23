@@ -1,33 +1,39 @@
 
-/* 初期設定
----------------------------------------------------- */
-//body {letter-spacing: 0.5em;}
-<style type="text/css">
+h1 {letter-spacing: 0.5em;}
+/*<style type="text/css">
+文整える
+text-align:justify;
+text-justify: inter-ideograph;
+*/
 
-//text-align:justify;
-//text-justify: inter-ideograph;
+body{
+    margin: 0px;
+    padding: 0px;
+    /*color: #333;
+    background: #fff;*/
+}
 
-/* ページの枠組み
----------------------------------------------------- */
+#flame {
+    margin: 0 auto;
+    width: 900px;
+    text-align:center;
+    border: 1px solid black;
+    height: 600px;
+}
+.clear_box{
+    clear: both;
+}
+#name_left{
+    float: left;
+    text-align: : left;
+    width: 200px;
+    padding: 10px;
+    height: 30px;
+}
 
-
-
-
-/* ヘッダー
----------------------------------------------------- */
-
-
-
-
-/* ナビゲーション
----------------------------------------------------- */
-
-
-
-/* メインコンテンツ
----------------------------------------------------- */
-
-
-
-/* フッター
----------------------------------------------------- */
+#name_right{
+    float: left;
+    text-align: 600px;
+    padding: 10px;
+    height: 30px;
+}
