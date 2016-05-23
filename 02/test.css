@@ -9,8 +9,8 @@ text-justify: inter-ideograph;
 body{
     margin: 0px;
     padding: 0px;
-    /*color: #333;
-    background: #fff;*/
+    /*color: #333;*/
+    /*background: #fff;*/
 }
 
 #flame {
@@ -19,6 +19,8 @@ body{
     text-align:center;
     border: 1px solid black;
     height: 600px;
+    background-color: #f8dce0;
+
 }
 .clear_box{
     clear: both;
@@ -36,4 +38,9 @@ body{
     text-align: 600px;
     padding: 10px;
     height: 30px;
+}
+
+#br{
+    font-size: 15px;
+    color: #ff0000;
 }
