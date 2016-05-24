@@ -7,6 +7,7 @@ text-justify: inter-ideograph;
 */
 
 body{
+    /*マージンとパディングを0ピクセル*/
     margin: 0px;
     padding: 0px;
     /*color: #333;
@@ -35,9 +36,10 @@ body{
 
 #name_right{
     float: left;
-    text-align: 600px;
+    text-align: 500px;
     padding: 10px;
     height: 30px;
+    /*width: 200px;*/
 }
 
 #br{
