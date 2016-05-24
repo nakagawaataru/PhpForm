@@ -1,5 +1,10 @@
+<!DOCTYPE html>
+<html>
+<head>
 <meta charset="utf-8">
 <link rel = "stylesheet" href = "test.css">
+<title>お問い合わせ</title>
+</head>
 <body>
 <div id="flame">
 
@@ -8,14 +13,14 @@
     <h1>お問い合わせ</h1>
     <div id = "name_left">姓<div id=br>必須</div></div>
     <div id = "name_right">
-        <input type="text" name="k" placeholder = "例）山田" value="" required="required">
+        <input type="text" name="surname" placeholder = "例）山田" value="" required="required">
         <div id="errormsg_姓" class="mfp_err"></div>
     </div>
     <div class="clear_box"></div>
 
     <div id = "name_left">名<div id=br>必須</div></div>
     <div id = "name_right">
-        <input type="text" name="n" placeholder = "例）太郎" value="" required="required">
+        <input type="text" name="name" placeholder = "例）太郎" value="" required="required">
     </div>
     <div class="clear_box"></div>
 
@@ -52,14 +57,14 @@
     </div>
     <div class="clear_box"></div>
 
-    <div id = "name_left">どこで知ったか<span>(複数可)</span><div id=br>必須</div></div>
+    <div id = "name_left">どこで知ったか(複数可)</div>
     <div id = "name_right">
-    <input type="checkbox" name="cbx[0]" id = "c" value="雑誌" checked id = "c">
+    <input type="checkbox" name="cbx[0]" id = "c" value="雑誌">
     <label for="c">雑誌</label>
     <input type="checkbox" name="cbx[1]" id = "b" value="インターネット">
-    <label for="c">インターネット</label>
-    <input type="checkbox" name="cbx[2]" id = "x" value="学校">
-    <label for="c">学校</label>
+    <label for="b">インターネット</label>
+    <input type="checkbox" name="cbx[2]" value="学校" id = "x">
+    <label for="x">学校</label>
     </div>
     <div class="clear_box"></div>
 
@@ -86,3 +91,4 @@
 </form>
 </div>
 </body>
+</html>
