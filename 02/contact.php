@@ -69,13 +69,13 @@
     </div>
     <div class="clear_box"></div>
 
-    <div id = "name_left">質問のカテゴリ<div id=br>必須</div></div>
+    <div id = "name_left">質問カテゴリ<div id=br>必須</div></div>
     <div id = "name_right">
     <select name="slt">
-        <option>クレーム</option>
-        <option>相談</option>
-        <option>感想</option>
-        <option>その他</option>
+        <option value="3">クレーム</option>
+        <option value="4">相談</option>
+        <option value="5">感想</option>
+        <option value="6">その他</option>
     </select>
     </div>
     <div class="clear_box"></div>

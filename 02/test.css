@@ -1,19 +1,15 @@
 
 h1 {letter-spacing: 0.5em;}
-/*<style type="text/css">
-文整える
-text-align:justify;
-text-justify: inter-ideograph;
-*/
+
 
 body{
     /*マージンとパディングを0ピクセル*/
     margin: 0px;
     padding: 0px;
-    /*color: #333;
-    background: #fff;*/
 }
-
+/*******************************
+　　　　　　　　　全体の枠
+********************************/
 #flame {
     margin: 0 auto;
     width: 900px;
@@ -39,7 +35,6 @@ body{
     text-align: 500px;
     padding: 10px;
     height: 30px;
-    /*width: 200px;*/
 }
 
 #br{
