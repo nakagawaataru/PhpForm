@@ -27,12 +27,14 @@
         required="required"は値を入力せずに送信を押したときにエラーメッセージを出力する-->
         <input type="text" name="surname" placeholder = "例）山田" value="" required="required">
     </div>
+    <!--スタイルシートで定義したクラスを適用-->
     <div class="clear_box"></div>
 
     <div id = "name_left">名<div id = br>必須</div></div>
     <div id = "name_right">
         <input type="text" name = "name" placeholder = "例）太郎" value="" required="required">
     </div>
+    <!--cssで指定-->
     <div class="clear_box"></div>
 
     <div id = "name_left">性別<div id=br>必須</div></div>
@@ -43,7 +45,7 @@
     <input type = "radio" name = "rdo" value = "1" id = "w">
     <label for = "w">女性</label>
     <input type = "radio" name = "rdo" value = "2" id = "u">
-    <label fo r= "u">不明</label>
+    <label for= "u">不明</label>
     </div>
     <div class = "clear_box"></div>
 
@@ -76,7 +78,7 @@
     <label for = "c">雑誌</label>
     <input type = "checkbox" name="cbx[1]" id = "b" value = "インターネット">
     <label for = "b">インターネット</label>
-    <input type = "checkbox" name="cbx[2]" value = "学校" id = "x">
+    <input type = "checkbox" name="cbx[2]" id = "x" value = "学校" >
     <label for = "x">学校</label>
     </div>
     <div class = "clear_box"></div>
