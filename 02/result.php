@@ -1,19 +1,6 @@
 <?php
-/*____________________________________
-echo $_POST['surname'];
-echo $_POST['name']. "<br>";
-echo $_POST['rdo'] . "<br>";
-echo $_POST['adress']. "<br>";
-echo $_POST['tell'] . "-";
-echo $_POST['tell2'] . "-";
-echo $_POST['tell3']. "<br>";
-echo $_POST['mail'] . "@";
-echo $_POST['mail2'] . "<br>";
-echo $_POST['cbx'] . "<br>";
-echo $_POST['slt'] . "<br>";
-echo $_POST['question'] . "<br>";
-_______________________________________
-*/
+/*エラー回避*/
+error_reporting(E_ALL & ~E_NOTICE);
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $surname = $_POST["surname"];
     $name = $_POST["name"];
@@ -27,16 +14,14 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
     $cbx = $_POST["cbx"];
     $slt = $_POST["slt"];
     $question = $_POST["question"];
-    /*$question = nl2br($question);*/
-
 }
 ?>
 <!DOCTYPE html>
 <html>
-
 <head>
-<link rel="stylesheet" href="test.css">
-<meta charset="utf-8">
+<link rel = "stylesheet" href = "test.css">
+<title>送信確認画面</title>
+<meta charset = "utf-8">
 
 <body>
 
@@ -48,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
         <div id = "name_right">
             <?php echo $surname . '&nbsp;&nbsp;' . $name; ?>
         </div>
-        <div class="clear_box"></div>
+        <div class = "clear_box"></div>
 
         <div id = "name_left">性別</div>
         <div id = "name_right">
@@ -72,25 +57,25 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
          ?>
 
          </div>
-            <div class="clear_box"></div>
+            <div class = "clear_box"></div>
 
             <div id = "name_left">住所</div>
             <div id = "name_right">
                 <?php echo $adress; ?>
             </div>
-            <div class="clear_box"></div>
+            <div class = "clear_box"></div>
 
             <div id = "name_left">電話番号</div>
             <div id = "name_right">
                 <?php echo $tell . "-" . $tell2 . "-" . $tell3; ?>
             </div>
-                <div class="clear_box"></div>
+                <div class = "clear_box"></div>
 
                 <div id = "name_left">メールアドレス</div>
                 <div id = "name_right">
                     <?php echo $mail . "@" . $mail2; ?>
                 </div>
-                    <div class="clear_box"></div>
+                    <div class = "clear_box"></div>
 
                     <div id = "name_left">どこで知りましたか</div>
                     <div id = "name_right">
@@ -110,7 +95,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                             }
                          ?>
                      </div>
-                     <div class="clear_box"></div>
+                     <div class = "clear_box"></div>
 
                      <div id = "name_left">質問カテゴリ</div>
                      <div id = "name_right">
@@ -129,17 +114,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                             }
                             ?>
                         </div>
-                        <div class="clear_box"></div>
+                        <div class = "clear_box"></div>
 
                         <div id = "name_left">質問内容</div>
                         <div id = "name_right">
+                            <div id = "a">
                             <?php print $question; ?>
                         </div>
-                        <div class="clear_box"></div>
-
-
-
-
+                        </div>
+                        <div class = "clear_box"></div>
 </body>
 </head>
 </html>
