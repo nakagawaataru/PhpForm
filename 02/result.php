@@ -1,7 +1,10 @@
 <?php
 /*エラー回避*/
 error_reporting(E_ALL & ~E_NOTICE);
+
+// フォームのボタンが押されたら
 if ($_SERVER['REQUEST_METHOD'] == 'POST'){
+     // フォームから送信されたデータを各変数に格納
     $surname = $_POST["surname"];
     $name = $_POST["name"];
     $rdo = $_POST["rdo"];
@@ -24,6 +27,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 <meta charset = "utf-8">
 
 <body>
+    <form action = "contact_result.php" method="post">
+
 
     <div id = "flame">
 
@@ -41,17 +46,17 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
             /*男性*/
             if ($_POST["rdo"] == 0) {
-                print "男性";
+                echo "男性";
                 }
 
            /*女性*/
            elseif ($_POST["rdo"] == 1) {
-                 print "女性";
+                 echo "女性";
                 }
 
              /*不明*/
             else {
-                print "不明";
+                echo "不明";
             }
 
          ?>
@@ -84,14 +89,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                                 /*変数$cbxに格納*/
                                 $cbx = $_POST["cbx"];
                             }
+                            /*変数$cbxに格納*/
                             if(isset($cbx[0])){
-                                print "雑誌";
+                                echo "雑誌";
                             }
                             if(isset($cbx[1])){
-                                print "インターネット";
+                                echo "インターネット";
                             }
                             if(isset($cbx[2])){
-                                print "学校";
+                                echo "学校";
                             }
                          ?>
                      </div>
@@ -101,16 +107,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                      <div id = "name_right">
                          <?php
                             if ($_POST["slt"] == "3") {
-                                print "クレーム";
+                                echo "クレーム";
                             }
                             elseif ($_POST["slt"] == "4") {
-                                print "相談";
+                                echo "相談";
                             }
                             elseif ($_POST["slt"] == "5") {
-                                print "感想";
+                                echo "感想";
                             }
                             else {
-                                print "その他";
+                                echo "その他";
                             }
                             ?>
                         </div>
@@ -119,10 +125,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                         <div id = "name_left">質問内容</div>
                         <div id = "name_right">
                             <div id = "a">
-                            <?php print $question; ?>
+                            <?php echo $question; ?>
                         </div>
                         </div>
                         <div class = "clear_box"></div>
+                        <input type="button" value="内容を修正する" onclick="history.back(-1)">
+                        <input type = "submit">
+
+
+</form>
 </body>
 </head>
 </html>
