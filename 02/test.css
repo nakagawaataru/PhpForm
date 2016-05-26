@@ -6,7 +6,9 @@ body{
     /*マージンとパディングを0ピクセル*/
     margin: 0px;
     padding: 0px;
+    /*背景画像の指定*/
     background-image: url("cat.jpg");
+    /*縦横比は保持して、背景領域を完全に覆う最小サイズになるように背景画像を拡大縮小する*/
     background-size: cover;
 }
 /*******************************
@@ -59,5 +61,6 @@ clearプロパティは、floatプロパティで左寄せ、
 }
 
 #a{
+    /*文字に合わせる*/
     border: solid;
 }

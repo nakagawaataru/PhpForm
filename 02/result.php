@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 <html>
 <head>
 <link rel = "stylesheet" href = "test.css">
-<title>お問い合わせ完了画面</title>
+<title>お問い合わせ</title>
 <meta charset = "utf-8">
 
 <body>
@@ -36,6 +36,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
         <div id = "name_left">姓名</div>
         <div id = "name_right">
+            <!--&nbspは半角スペースと同量の間隔を空ける-->
             <?php echo $surname . '&nbsp;&nbsp;' . $name; ?>
         </div>
         <div class = "clear_box"></div>
@@ -129,6 +130,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                         </div>
                         </div>
                         <div class = "clear_box"></div>
+                        <!--1つ前の画面に戻る-->
                         <input type="button" value="内容を修正する" onclick="history.back(-1)">
                         <input type = "submit">
 

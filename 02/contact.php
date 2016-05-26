@@ -1,7 +1,6 @@
 <!--文書型宣言-->
 <!DOCTYPE html>
-<!--日本語-->
-<html lang="ja">
+<html>
 <head>
 <!--HTML文書の文字コードがutf-8であることを示す-->
 <meta charset="utf-8">
@@ -14,6 +13,7 @@
 <body>
     <!--cssで指定-->
 <div id = "flame">
+    <!--送信先と送信形式の指定-->
 <form action = "result.php" method="post">
     <!--見出し-->
     <h1>お問い合わせ</h1>
