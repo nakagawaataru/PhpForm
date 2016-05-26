@@ -23,7 +23,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 <html>
 <head>
 <link rel = "stylesheet" href = "test.css">
-<title>送信確認画面</title>
+<title>お問い合わせ完了画面</title>
 <meta charset = "utf-8">
 
 <body>

@@ -6,6 +6,8 @@ body{
     /*マージンとパディングを0ピクセル*/
     margin: 0px;
     padding: 0px;
+    background-image: url("cat.jpg");
+    background-size: cover;
 }
 /*******************************
             全体の枠

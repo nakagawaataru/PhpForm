@@ -2,7 +2,6 @@
 <!DOCTYPE html>
 <!--日本語-->
 <html lang="ja">
-<html>
 <head>
 <!--HTML文書の文字コードがutf-8であることを示す-->
 <meta charset="utf-8">
@@ -57,18 +56,20 @@
 
     <div id = "name_left">電話番号<div id = br>必須</div></div>
     <div id = "name_right">
-    <input type = "text" name = "tell" placeholder = "例）090" value = "" required = "required">-
+        <!--patternで数字と何文字か指定-->
+    <input type = "text" pattern="^[0-9]{3,4}" name = "tell" placeholder = "例）090" value = "" required = "required" >-
 
-    <input type = "text" name = "tell2" placeholder = "例）000" value = "" required = "required">-
+    <input type = "text" pattern="^[0-9]{3,4}" name = "tell2" placeholder = "例）000" value = "" required = "required">-
 
-    <input type = "text" name = "tell3" placeholder = "例）000" value = "" required = "required">
+    <input type = "text" pattern="^[0-9]{3,4}" name = "tell3" placeholder = "例）000" value = "" required = "required">
     </div>
     <div class = "clear_box"></div>
 
     <div id = "name_left">メールアドレス<div id = br>必須</div></div>
     <div id = "name_right">
-    <input type = "text" name = "mail" placeholder = "例）test" value = "" required = "required">@
-    <input type = "text" name = "mail2" placeholder = "例）gmail.com" value = "" required = "required">
+        <!--patternで半角英数字指定-->
+    <input type = "text" pattern="^[0-9A-Za-z]+$" name = "mail" placeholder = "例）test" value = "" required = "required">@
+    <input type = "text" pattern="^[0-9A-Za-z-.]+$" name = "mail2" placeholder = "例）gmail.com" value = "" required = "required">
     </div>
     <div class = "clear_box"></div>
 
