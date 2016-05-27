@@ -57,11 +57,11 @@
     <div id = "name_left">電話番号<div id = br>必須</div></div>
     <div id = "name_right">
         <!--patternで数字と何文字か指定-->
-    <input type = "text" pattern="^[0-9]{3,4}" name = "tell" placeholder = "例）090" value = "" required = "required" >-
+    <input type = "text" pattern="^[0-9]{1,11}" name = "tell" placeholder = "例）090" value = "" required = "required" >-
 
-    <input type = "text" pattern="^[0-9]{3,4}" name = "tell2" placeholder = "例）000" value = "" required = "required">-
+    <input type = "text" pattern="^[0-9]{1,11}" name = "tell2" placeholder = "例）000" value = "" required = "required">-
 
-    <input type = "text" pattern="^[0-9]{3,4}" name = "tell3" placeholder = "例）000" value = "" required = "required">
+    <input type = "text" pattern="^[0-9]{1,11}" name = "tell3" placeholder = "例）000" value = "" required = "required">
     </div>
     <div class = "clear_box"></div>
 

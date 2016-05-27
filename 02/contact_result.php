@@ -4,7 +4,6 @@
 <meta charset="UTF-8">
 <center>
 <title>お問い合わせ</title>
-<link rel="stylesheet" href="test.css">
 </head>
 <body>
 <div>
