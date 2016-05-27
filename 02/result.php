@@ -131,9 +131,10 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                         </div>
                         <div class = "clear_box"></div>
                         <!--1つ前の画面に戻る-->
+                        <div id ="button">
                         <input type="button" value="内容を修正する" onclick="history.back(-1)">
                         <input type = "submit">
-
+</div>
 
 </form>
 </body>

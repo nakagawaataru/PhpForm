@@ -99,12 +99,14 @@
     <div id = "name_right">
     <!--rowsは行数、colsは文字数-->
     <textarea rows = "2" cols = "40" name = "question"
-    placeholder = "例）パソコンが壊れました" value = "" required = "required"></textarea>
+    placeholder = "例）パソコンが壊れました" value = "" required = "required" wrap="hard"></textarea>
     </div>
     <div class = "clear_box"></div>
 
+    <div id ="button">
     <input type = "submit">
     <input type = "reset" >
+    </div>
 
 </form>
 </div>
