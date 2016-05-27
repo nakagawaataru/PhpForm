@@ -85,7 +85,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
             <div id = "name_left">電話番号</div>
             <div id = "name_right">
-                <?php echo $tell . "-" . $tell2 . "-" . $tell3; ?>
+                <?php
+
+              if($_POST["tell"]!=='' && $_POST["tell2"]!=='' && $_POST["tell3"]!==''){
+                  echo $_POST["tell"]. '-'. $_POST["tell2"]. '-'. $_POST["tell3"];
+              }
+              elseif($_POST["tell"]==='' && $_POST["tell2"]==='' && $_POST["tell3"]===''){
+                  echo '記入しない';
+              }
+              else{
+                  echo '不備があります';
+              }
+              ?>
             </div>
                 <div class = "clear_box"></div>
 
@@ -104,13 +115,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                             }
                             /*変数$cbxに格納*/
                             if(isset($cbx[0])){
-                                echo "雑誌";
+                                echo "雑誌" . " ";
                             }
                             if(isset($cbx[1])){
-                                echo "インターネット";
+                                echo "インターネット" . " ";
                             }
                             if(isset($cbx[2])){
-                                echo "学校";
+                                echo "学校" ." ";
                             }
                          ?>
                      </div>
