@@ -36,8 +36,20 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
         <div id = "name_left">姓名</div>
         <div id = "name_right">
-            <!--&nbspは半角スペースと同量の間隔を空ける-->
-            <?php echo $surname . '&nbsp;&nbsp;' . $name; ?>
+            <?php
+                if(isset($_POST['surname'])){
+                    echo $_POST['surname'] . " ";
+                }
+                else {
+                    echo "姓を入力してください";
+                }
+                if(isset($_POST['name']) ){
+                echo $_POST['name'] . " ";
+                }
+                else{
+                echo "名を入力してください";
+            }
+             ?>
         </div>
         <div class = "clear_box"></div>
 
@@ -51,12 +63,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
                 }
 
            /*女性*/
-           elseif ($_POST["rdo"] == 1) {
+           if ($_POST["rdo"] == 1) {
                  echo "女性";
                 }
 
              /*不明*/
-            else {
+            if($_POST["rdo"] == 2) {
                 echo "不明";
             }
 
