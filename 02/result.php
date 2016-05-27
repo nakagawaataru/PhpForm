@@ -86,7 +86,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
             <div id = "name_left">電話番号</div>
             <div id = "name_right">
                 <?php
-
+                //!==反対
               if($_POST["tell"]!=='' && $_POST["tell2"]!=='' && $_POST["tell3"]!==''){
                   echo $_POST["tell"]. '-'. $_POST["tell2"]. '-'. $_POST["tell3"];
               }
@@ -102,7 +102,18 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST'){
 
                 <div id = "name_left">メールアドレス</div>
                 <div id = "name_right">
-                    <?php echo $mail . "@" . $mail2; ?>
+                    <?php
+                        if( (isset($_POST["mail"]) && $_POST["mail"]!=='' )
+                                && ( isset($_POST["mail2"]) && $_POST["mail2"]!=='') ){
+                                    echo $_POST["mail"]. "@". $_POST["mail2"];
+                                }
+                                elseif($_POST["mail"]==='' && $_POST["mail2"]===''){
+                                    echo '記入しない';
+                                }
+                                else{
+                                    echo '不備があります';
+                                }
+                                ?>
                 </div>
                     <div class = "clear_box"></div>
 

@@ -50,7 +50,7 @@
 
     <div id = "name_left">住所<div id = br>必須</div></div>
     <div id = "name_right">
-    <input type = "text" name = "adress" placeholder = "例）東京都〇〇区〇-〇-〇" value = "" required = "required">
+    <input type = "text" name = "adress" placeholder = "例）東京都〇〇区〇-〇-〇" value = "" >
     </div>
     <div class = "clear_box"></div>
 
